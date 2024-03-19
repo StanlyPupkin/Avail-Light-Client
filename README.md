@@ -1,15 +1,16 @@
 # Avail-Light-Client
 #Avail-Light-Client
+
 #This instructions start after you succesfully connetced to your server 
 
 ***
-1)**go to directory**
+1)**Go to directory**
 
 ```
  сd root
 ```
 
-2)**create directory**
+2)**Create directory**
 
 ```
 cd $HOME
@@ -18,14 +19,16 @@ cd avail-light-client
 ```
 
 3)**Download the latest stable version compatible with your system: https://github.com/availproject/avail-light/releases/tag/v1.7.9**
-**If You running simple on VPS unbuntu just copy past below example**
-**example:**
+
+**(If You running simple on VPS unbuntu just copy past below example)**
+
+**Example:**
 
 ```
 wget https://github.com/availproject/avail-light/releases/download/v1.7.9/avail-light-linux-amd64.tar.gz
 ```
 
-4)**extract it:**
+4)**Extract it:**
 
 ```
 tar -xvzf avail-light-linux-amd64.tar.gz
@@ -33,7 +36,7 @@ cp avail-light-linux-amd64 avail-light
 rm -r avail-light-linux-amd64.tar.gz
 ```
 
-5)**go to directory**
+5)**Go to directory**
 
 ```
  cd /avail-light/target/release
@@ -46,7 +49,7 @@ touch identity.toml
 nano identity.toml
 ```
 
-7)**paste this and enter your avail wallet seed:**
+7)**Paste this and enter your avail wallet seed:**
 
 ```
 avail_secret_seed_phrase = 'enter_your_seed_here'
@@ -66,7 +69,7 @@ touch /etc/systemd/system/availdlight.service
 nano /etc/systemd/system/availdlight.service
 ```
 
-9)**paste this content:**
+9)**Paste this content:**
 
 ```
 [Unit]
@@ -82,7 +85,7 @@ RestartSec=120
 WantedBy=multi-user.target
 ```
 
-**save it: ctrl x + y + enter**
+**Save it: ctrl x + y + enter**
 
 10)**Starting service:**
 
