@@ -4,6 +4,9 @@
 #This instructions start after you succesfully connetced to your server 
 
 ***
+Upgrade Your machine
+**sudo apt-get update && sudo apt upgrade**
+
 1)**Go to directory**
 
 ```
